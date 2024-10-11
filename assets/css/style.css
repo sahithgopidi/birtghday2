@@ -1,0 +1,57 @@
+/* assets/css/style.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ffecd2;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 100px auto;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #ff6f61;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+}
+
+.birthday-image {
+    margin-top: 30px;
+}
+
+.birthday-image img {
+    width: 300px;
+}
+
+.confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.confetti div {
+    position: absolute;
+    background-color: #ff6f61;
+    width: 15px;
+    height: 15px;
+    animation: fall 5s infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(720deg);
+    }
+}
